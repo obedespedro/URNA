@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletronica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <header>
+
+    </header>
+ 
+    <main>
+        <div class="opacit"></div>
+        <section >
+
+            <div class="urna">
+                <div class="tela">
+                    <h1>Presidente</h1>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Numero</th>
+                            <th scope="col">Foto do Candidato</th>
+                            <th scope="col">foto do Vice</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row"><input  type='text' id='field1' readonly value='0'/></th>
+                            <td><img src="image/logo.png" id="fotodocandidato"></td>
+                            <td><img src="image/logo.png" id="fotodovice"></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Nome:</th>
+                            <td id="nomedocandidadto"></td>
+                            <td id="nomedovice"></td>
+
+                          </tr>
+                          <tr>
+                            <th scope="row">Partido:</th>
+                            <td colspan="2" id="partido"></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                   
+                    
+                    
+    
+                </div>
+                <div >
+                    <div class="logo">
+                        <img src="image/logo.png" alt="logo">
+                    </div>
+                    <div class="teclado">
+    
+                        <div class="numeral">
+                            <div class="">
+                                <div class="container text-center">
+                                    <div class="row">
+                                      <div onclick='writeNumber(this)' onmousedown="amimacao(this)"  onmouseup="soltar(this)" id="1" class="col botoes">1</div>
+                                      <div onclick='writeNumber(this)' onmousedown="amimacao(this)" onmouseup="soltar(this)" id="2" class="col botoes">2</div>
+                                      <div onclick='writeNumber(this)' onmousedown="amimacao(this)" onmouseup="soltar(this)" id="3" class="col botoes">3</div>
+                                    </div>
+                                  </div>
+                                  <div class="container text-center">
+                                    <div class="row">
+                                      <div onclick='writeNumber(this)' onmousedown="amimacao(this)" onmouseup="soltar(this)" id="4" class="col botoes">4</div>
+                                      <div onclick='writeNumber(this)' onmousedown="amimacao(this)"onmouseup="soltar(this)" id="5" class="col botoes">5</div>
+                                      <div onclick='writeNumber(this)' onmousedown="amimacao(this)"onmouseup="soltar(this)" id="6" class="col botoes">6</div>
+                                    </div>
+                                  </div>
+                                  <div class="container text-center">
+                                    <div class="row">
+                                      <div onclick='writeNumber(this)' onmousedown="amimacao(this)"onmouseup="soltar(this)" id="7" class="col botoes">7</div>
+                                      <div onclick='writeNumber(this)' onmousedown="amimacao(this)"onmouseup="soltar(this)" id="8" class="col botoes">8</div>
+                                      <div  onclick='writeNumber(this)' onmousedown="amimacao(this)"onmouseup="soltar(this)" id="9" class="col botoes">9</div>
+                                    </div>
+                                  </div>                       
+                                  <div class="container text-center">
+                                    <div class="row">
+                                      <div  class="col  zero  ">
+                                        a
+                                      </div>
+                                      <div onclick='writeNumber(this)' onmousedown="amimacao(this)"onmouseup="soltar(this)" id="0" class="col botoes">0</div>
+                                      <div  class="col  zero">
+                                        a
+                                      </div>
+                                    </div>
+                                  </div> 
+    
+                                  <div class="container text-center">
+                                    <div class="row">
+                                      <div  onclick="anull()" onmousedown= "amimacao(this)"onmouseup="soltar(this)" id="anula" class="col botoes">
+                                        branco
+                                      </div>
+                                      <div onclick='cleartxt()' onmousedown="amimacao()"onmouseup="soltar()" id="corrige" class="col botoes">
+                                        corrige
+                                      </div>
+                                      <div onclick="confirma()" onmousedown="amimacao(this)"onmouseup="soltar(this)" id="confirma" class="col botoes">
+                                        confirma
+                                      </div>
+                                    </div>
+                                  </div>
+        
+            
+                            </div>
+        
+        
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    
+    <footer>
+
+    </footer>
+    <script src="js/main.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
